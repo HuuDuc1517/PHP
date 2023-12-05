@@ -6,10 +6,10 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
         if(strlen($username) < $minimum){
-            echo 'User tu 5 ky tu tro len'
+            echo 'User tu 5 ky tu tro len';
         }
         if(strlen($username) > $maximun){
-            echo 'User '
+            echo 'User ';
         }
         if (!in_array($username, $login)){
             echo 'sorry you are not allowed';
