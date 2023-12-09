@@ -1,15 +1,17 @@
 <?php
-    include 'connect.php';
+    include "connect.php";
     function createRow(){
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-        $fullname = $_POST['fullname'];
-        $query = 'INSERT INTO users(email, password, fullname) VALUES("$email", "$password", "$fullname")';
-        $result = mysqli_query($conn,$query);
-        if(!$result){
-            die('Query failed!'.mysqli_error());
-        }else{
-            echo 'Record Create';
-        }  
-    }  
+        if(isset($_POST['submit'])){
+            $email = $_POST['email'];
+            $password=$_POST['password'];
+            $fullName = $_POST['fullname'];
+            $query = "INSERT INTO users(email, password, fullName) VALUES('$email','$password','$fullName')";
+            $result =mysqli_query($conn,$query);
+            if(!$result){
+                die("Query failed!".mysqli_error());
+            }else{
+                echo "Record Create";
+            }
+        }
+    }
 ?>
