@@ -9,7 +9,7 @@
         <i class="fa-solid fa-lock-open"></i><input type="password" name="password" class="form-control" id="password" placeholder="**********">
     </div>
     <div class="mb-3">
-    <i class="fa-solid fa-right-to-bracket"></i><input type="submit" value="Login" name="submit">
+        <i class="fa-solid fa-right-to-bracket"></i><input type="submit" value="Login" name="submit">
         <input type="reset" value="Reset">
     </div>
 </form>

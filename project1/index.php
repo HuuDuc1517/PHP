@@ -1,6 +1,9 @@
+<?php include "database/function.php"?>
 
-<?php include 'database/connect.php';?>
-
+<?php
+  updateRow();
+  createRow();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,13 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-   <!-- thanh menu -->
-    <?php include 'includes/header.php';?>
+  <?php include "includes/header.php";?>
+<!-- thanh menu -->
 
-    <div class = 'container'>
+    <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <?php include 'login.php';?>
+                <?php include "UserList.php"?>
             </div>
         </div>
     </div>
